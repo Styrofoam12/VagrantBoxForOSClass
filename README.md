@@ -1,6 +1,8 @@
 # It's Vagrant time!
 
-My rendition of a Vagrant setup for my Operating Systems class at the University of Akron.
+My rendition of a Vagrant setup using Ubuntu for my Operating Systems class at the University of Akron.
+
+Version: 1.0.1
 
 Instructions:
 

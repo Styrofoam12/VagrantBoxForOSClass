@@ -27,6 +27,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       v.name = 'Ubuntu Server 14.04'
       v.memory = 4096
       v.cpus = CPUS
+      v.gui = true
     end
 
     # from support, not used for OS / bochs compilation
