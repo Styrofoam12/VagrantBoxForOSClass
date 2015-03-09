@@ -1,0 +1,41 @@
+# OS-specific
+.DS_Store
+
+# Vagrant stuff
+*.box
+acceptance_config.yml
+boxes/*.box
+.vagrant
+
+# Bundler/Rubygems
+*.gem
+.bundle
+pkg/*
+tags
+Gemfile.lock
+test/tmp/
+
+# Documentation
+_site/*
+.yardoc/
+doc/
+
+# Python
+*.pyc
+
+# Rubinius
+*.rbc
+
+# IDE junk
+.idea/*
+*.iml
+*.sw*
+
+# Ruby Managers
+.rbenv
+.ruby-gemset
+.ruby-version
+.rvmrc
+
+# Vim
+shared/vim/bundle/

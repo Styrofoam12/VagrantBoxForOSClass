@@ -1,0 +1,11 @@
+-module(${1:module}_tests).
+
+-ifdef(TEST).
+-include_lib("eunit/include/eunit.hrl").
+
+${1:function}_0_function_test() ->
+  {"${1:function}/0 tests", [
+      ?assertEqual(${2:module}:{1:function}(), true)
+      ]}.
+
+-endif.

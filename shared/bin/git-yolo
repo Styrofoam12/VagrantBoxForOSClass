@@ -1,0 +1,4 @@
+#!/bin/sh
+
+#git-yolo
+git commit -am "DEAL WITH IT" && git push -f origin master

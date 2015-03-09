@@ -1,0 +1,36 @@
+[user]
+	name = Jerry D'Antonio
+	email = stumpjumper@gmail.com
+[alias]
+	st = status
+	cm = commit -m
+	cam = commit -a -m
+	co = checkout
+	br = branch
+	bra = branch -a
+	brr = branch -r
+	mff = merge --no-ff
+	put = push origin master
+	rollback = reset --hard HEAD@{1}
+	untrack = git branch -d -r
+	refresh = remote prune origin
+	standup = log --since yesterday --author Jerry
+	latest = for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short)'
+	llatest = for-each-ref --sort=-committerdate refs/heads --format='%(committerdate:short) %(refname:short)'
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  mine = log --author="Jerry" --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  diff = diff --word-diff -w
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[giggle]
+	main-window-maximized = false
+	main-window-geometry = 1181x830+1813+103
+	main-window-view = FileView
+	file-view-vpane-position = 493
+	history-view-vpane-position = 707

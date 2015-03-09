@@ -1,0 +1,24 @@
+\documentclass[letterpaper]{book}
+%\documentclass[letterpaper]{report}
+%\documentclass[a4paper]{book}
+
+\usepackage[parfill]{parskip}
+\setlength{\parindent}{15pt}
+\usepackage{indentfirst}
+
+\usepackage{fancyhdr}
+\fancypagestyle{plain}{
+\fancyfoot[C]{Copyright \textcopyright\ ${1:year} Jerry D'Antonio. All Rights Reserved.}
+}
+\renewcommand{\headrulewidth}{0pt}
+
+% remove this line of you want page 2 to be blank
+\let\cleardoublepage\clearpage
+
+\title{${2:title}}
+\author{Jerry D'Antonio}
+
+\begin{document}  
+\maketitle
+\input{ch1}   
+\end{document}

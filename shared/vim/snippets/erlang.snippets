@@ -1,0 +1,85 @@
+# escript skeleton
+snippet escript
+	#!/usr/bin/env escript
+
+	main([${1:Args}]) ->
+	  ${2}.
+# define directive
+snippet def
+	-define(${1:macro}, ${2:body}).${3}
+# export directive
+snippet exp
+	-export([
+	  ${1:function}/${2:arity}
+		]).
+# import directive
+snippet imp
+	-import(${1:module}, [${2:function}/${3:arity}]).
+# include directive
+snippet inc
+	-include("${1:file}").${2}
+# include lib
+snippet lib
+	-include_lib("${1:file}").${2}
+# behavior directive
+snippet beh
+	-behaviour(${1:behaviour}).${2}
+# specification directive
+snippet spec
+	-spec(${1:function}(${2}) -> ${3:return}()).
+# "if defined" macro
+snippet ifdef
+	-ifdef(${1}).
+	${2}
+	-endif.
+# if expression
+snippet if
+	if
+	    ${1:guard} ->
+	        ${2:body};
+			true ->
+	        ${3:else}
+	end
+# case expression
+snippet case
+	case ${1:expression} of
+	    ${2:pattern} ->
+	        ${3:body};
+	end
+# anonymous function
+snippet fun
+	fun (${1:Parameters}) -> ${2:body} end${3}
+# try...catch
+snippet try
+	try
+	    ${1}
+	catch
+	    ${2:_:_} -> ${3:got_some_exception}
+	end
+# record directive
+snippet rec
+	-record(${1:record}, {
+	    ${2:field}=${3:value}}).${4}
+# todo comment
+snippet todo
+	%% TODO: ${1}
+## Snippets below (starting with '%') are in EDoc format.
+## See http://www.erlang.org/doc/apps/edoc/chapter.html#id56887 for more details
+# doc comment
+snippet %d
+	%% @doc ${1}
+# end of doc comment
+snippet %e
+	%% @end
+# specification comment
+snippet %s
+	%% @spec ${1}
+# private function marker
+snippet %p
+	%% @private
+# eunit test
+snippet test
+	${1:name}_test() ->
+	  {"${2:description}", [
+	      ?assert(${3})
+	      ]}.
