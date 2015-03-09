@@ -1,4 +1,4 @@
-# VAGRANT WOOO
+# It's Vagrant time!
 
 My rendition of a Vagrant setup for my Operating Systems class at the University of Akron.
 
