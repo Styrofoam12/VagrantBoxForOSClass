@@ -10,11 +10,11 @@ Instructions:
 
 -Navigate to where this repo is downloaded to
 
--Type into the shell ~~~vagrant up~~~ and watch the magic
+-Type into the shell __vagrant up__ and watch the magic
 
 
 -After everything installs (Should take somewhere between 5-15 minutes) close the VM and reopen
- using either ~~~vagrant up~~~ or through the VirtualBox start button
+ using either __vagrant up__ or through the VirtualBox start button
 
 -The standard login is user/pass: Vagrant/vagrant
 
